@@ -24,7 +24,7 @@ app.UseSwaggerUI(c =>
 });
 
 // 🔹 Redirect Root URL to Swagger
-app.Use(async (context, next) =>
+app.Use(async (context, next) => 
 {
     if (context.Request.Path == "/")
     {
